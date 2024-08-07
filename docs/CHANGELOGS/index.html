@@ -1,0 +1,2535 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="sunnypilot Documentation">
+      
+      
+      
+        <link rel="canonical" href="https://docs.sunnypilot.ai/CHANGELOGS/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>sunnypilot - 0.9.8.0 (2024-xx-xx) - sunnypilot docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sunnypilot-0980-2024-xx-xx" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="sunnypilot docs" class="md-header__button md-logo" aria-label="sunnypilot docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            sunnypilot docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              sunnypilot - 0.9.8.0 (2024-xx-xx)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sunnypilot/sunnypilot/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sunnypilot/sunnypilot
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../getting-started/what-is-sunnypilot/" class="md-tabs__link">
+          
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../features/modified-assistive-driving-safety/" class="md-tabs__link">
+          
+  
+    
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../community/CONTRIBUTING/" class="md-tabs__link">
+          
+  
+    
+  
+  Community
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../SAFETY/" class="md-tabs__link">
+          
+  
+    
+  
+  Safety Information
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../how-to/enable-mapbox-navigation/" class="md-tabs__link">
+          
+  
+    
+  
+  How To
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../branches/definitions/" class="md-tabs__link">
+          
+  
+    
+  
+  References
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="sunnypilot docs" class="md-nav__button md-logo" aria-label="sunnypilot docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    sunnypilot docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sunnypilot/sunnypilot/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sunnypilot/sunnypilot
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/what-is-sunnypilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is sunnypilot?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/use-sunnypilot-in-a-car/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use sunnypilot in a car
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/develop-sunnypilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Develop sunnypilot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/read-before-installing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🚨 Read before installing 🚨
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4_2" id="__nav_1_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/url-method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    URL Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/ssh-method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SSH Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../setup/changelogs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Changelogs
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Changelogs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/modified-assistive-driving-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modified Assistive Driving Safety (MADS)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/dynamic-lane-profile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dynamic Lane Profile (DLP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Community
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Community
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community/CONTRIBUTING/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community/reporting-a-bug/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reporting a bug
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Safety Information
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Safety Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SAFETY/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../safety-information/prohibited-safety-modifications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prohibited safety modifications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How To
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            How To
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/enable-mapbox-navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enable Mapbox navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/radar-tracks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enable Radar Tracks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/turn-the-speed-blue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turn the speed blue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Branches
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Branches
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branches/definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branches/recommended-branches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recommended Branches
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/sunnypilot/sunnypilot/blob/new-docs/docs_sp/CHANGELOGS.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.84 2.73c-.39 0-.77.15-1.07.44l-2.12 2.12 5.3 5.31 2.12-2.1c.6-.61.6-1.56 0-2.14L17.9 3.17c-.3-.29-.68-.44-1.06-.44M12.94 6l-8.1 8.11 2.56.28.18 2.29 2.28.17.29 2.56 8.1-8.11m-14 3.74L2.5 21.73l6.7-1.79-.24-2.16-2.31-.17-.18-2.32"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="sunnypilot-0980-2024-xx-xx">sunnypilot - 0.9.8.0 (2024-xx-xx)<a class="headerlink" href="#sunnypilot-0980-2024-xx-xx" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Always on driver monitoring toggle</li>
+</ul>
+<hr />
+<ul>
+<li>UPDATED: Synced with commaai's openpilot</li>
+<li>master commit 4ef757c (July 06, 2024)</li>
+<li>NEW❗: Default Driving Model: Notre Dame (July 01, 2024)</li>
+<li>NEW❗: Longitudinal: Acceleration Personality thanks to kegman, rav4kumar, and arne1282!</li>
+<li>Select from three distinct acceleration personalities: Eco, Normal, and Sport</li>
+<li>Acceleration personalities are integrated directly into the model's acceleration matrix and can be activated in real-time!</li>
+<li>NEW❗: Longitudinal: Dynamic Personality thanks to rav4kumar!</li>
+<li>Dynamically adjusts following distance and reaction based on your "Driving Personality" setting</li>
+<li>Personalities adapt in real-time to your speed and the distance to the lead car</li>
+<li>Provides a more responsive and tailored driving experience compared to predefined settings</li>
+<li>UPDATED: Driving Personality: Updated mode names</li>
+<li>Aggressive, Moderate, Standard, Relaxed</li>
+<li>NEW❗: Toyota - Enhanced Blind Spot Monitor (BSM) thanks to arne182, rav4kumar, and eFiniLan!</li>
+<li>Enables Blind Spot Monitor (BSM) signals parsing in sunnypilot using the factory Blind Spot Monitor (BSM)</li>
+<li>sunnypilot will use debugging CAN messages to receive unfiltered BSM signals, allowing detection of more objects</li>
+<li>Supported platforms<ul>
+<li>RAV4 TSS1, equipped with factory Blind Spot Monitoring (BSM)</li>
+<li>Lexus LSS1, equipped with factory Blind Spot Monitoring (BSM)</li>
+<li>Toyota TSS1/1.5, equipped with factory Blind Spot Monitoring (BSM)</li>
+<li>Prius TSS2, equipped with factory Blind Spot Monitoring (BSM)</li>
+</ul>
+</li>
+<li>NOTE: Only enable this feature if your Toyota/Lexus vehicle has factory Blind Spot Monitor equipped, and mentioned in the supported platforms list</li>
+<li>UPDATED: Toyota: TSS2 longitudinal: Custom Tuning</li>
+<li>Re-tuned and tested by the community (July 1, 2024)</li>
+<li>UPDATED: Driving Model Selector v5</li>
+<li>NEW❗: Driving Model additions<ul>
+<li>Notre Dame (July 01, 2024) - NDv3</li>
+</ul>
+</li>
+<li>UPDATED: Toyota: Continued support for Smart DSU (SDSU) and Radar CAN Filter</li>
+<li>In response to the official deprecation of support for Smart DSU (SDSU) and Radar CAN Filter in the upstream (<a href="https://github.com/commaai/openpilot/pull/32777">commaai/openpilot#32777</a>), sunnypilot will continue maintaining software support for Smart DSU (SDSU) and Radar CAN Filter</li>
+<li>UPDATED: Continued support for Mapbox navigation</li>
+<li>In response to the official temporary deprecation of support for Mapbox navigation in the upstream (<a href="https://github.com/commaai/openpilot/pull/32773">commaai/openpilot#32773</a>), sunnypilot will continue maintaining software support for Mapbox navigation</li>
+<li>NEW❗: Toyota - Automatic Door Locking and Unlocking thanks to AlexandreSato, cydia2020, and dragonpilot-community!</li>
+<li>Auto Lock by Speed: All doors are automatically locked when vehicle speed is approximately 6 mph (10 km/h) or higher</li>
+<li>Auto Unlock by Shift to P: All doors are automatically unlocked when shifting the shift lever to P</li>
+<li>FIXED: Driving Personality:</li>
+<li>Maniac mode now correctly enforced when selected</li>
+<li>UI Updates</li>
+<li>Display Metrics Below Chevron<ul>
+<li>NEW❗: Time to Lead Car</li>
+<li>Displays the time to reach the position previously occupied by the lead car</li>
+<li>NEW❗: Display Distance, Speed, and Time to Lead Car simultaneously</li>
+</ul>
+</li>
+<li>Kia Ceed Plug-in Hybrid Non-SCC 2022 support thanks to TerminatorNL!</li>
+</ul>
+<h1 id="sunnypilot-0971-2024-06-13">sunnypilot - 0.9.7.1 (2024-06-13)<a class="headerlink" href="#sunnypilot-0971-2024-06-13" title="Permanent link">&para;</a></h1>
+<ul>
+<li>New driving model</li>
+<li>Inputs the past curvature for smoother and more accurate lateral control</li>
+<li>Simplified neural network architecture in the model's last layers</li>
+<li>Minor fixes to desire augmentation and weight decay</li>
+<li>New driver monitoring model</li>
+<li>Improved end-to-end bit for phone detection</li>
+<li>Adjust driving personality with the follow distance button</li>
+<li>Support for hybrid variants of supported Ford models</li>
+<li>Fingerprinting without the OBD-II port on all cars</li>
+<li>Improved fuzzy fingerprinting for Ford and Volkswagen</li>
+</ul>
+<hr />
+<ul>
+<li>UPDATED: Synced with commaai's openpilot</li>
+<li>master commit f8cb04e (June 10, 2024)</li>
+<li>NEW❗: sunnylink (Alpha early access)</li>
+<li>NEW❗: Config/Settings Backup<ul>
+<li>Remotely back up and restore sunnypilot settings easily</li>
+<li>Device registration with sunnylink ensures a secure, integrated experience across services</li>
+<li>AES encryption derived from the device's RSA private key is used for utmost security</li>
+<li>Settings are encrypted on-device, transmitted securely via HTTPS, and stored encrypted on sunnylink</li>
+<li>Prevents loss of settings after device resets, offering peace of mind through end-to-end encryption</li>
+<li>Early alpha access to all current and previous GitHub Sponsors and Patreon supporters</li>
+</ul>
+</li>
+<li>GitHub account pairing from device settings scanning QR code<ul>
+<li>Pairing your account will allow you to access features via our API (still WIP but accessible if you dig a little on our code 😉)</li>
+<li>Allow inheritance of your sponsorship status, allowing you to get extra features and early access whenever applicable</li>
+</ul>
+</li>
+<li>NEW❗: iOS Siri Shortcuts Navigation support thanks to twilsonco and mike86437!</li>
+<li>iOS and macOS Shortcuts to quickly set navigation destinations from your iOS device</li>
+<li>comma Prime support</li>
+<li>Personal Mapbox/Amap/Google Maps token support</li>
+<li>Instructions on how to set up your iOS Siri Shortcuts: https://routinehub.co/shortcut/17677/</li>
+<li>NEW❗: Forced Offroad mode</li>
+<li>Force sunnypilot in the offroad state even when the car is on</li>
+<li>When Forced Offroad mode is on, allows changing offroad-only settings even when the car is turned on</li>
+<li>To engage/disengage Force Offroad, go to Settings -&gt; Device panel</li>
+<li>UPDATED: Auto Lane Change Timer -&gt; Auto Lane Change by Blinker</li>
+<li>NEW❗: New "Off" option to disable lane change by blinker</li>
+<li>UPDATED: Pause Lateral Below Speed with Blinker</li>
+<li>NEW❗: Customizable Pause Lateral Speed<ul>
+<li>Pause lateral actuation with blinker when traveling below the desired speed selected. Default is 20 MPH or 32 km/h.</li>
+</ul>
+</li>
+<li>UPDATED: Hyundai CAN Longitudinal</li>
+<li>Auto-enable radar tracks on platforms with applicable Mando radar</li>
+<li>UPDATED: Hyundai CAN-FD Camera-based SCC</li>
+<li>NEW❗: Parse lead info for camera-based SCC platforms with longitudinal support<ul>
+<li>Improve lead tracking when using openpilot longitudinal</li>
+</ul>
+</li>
+<li>RE-ENABLED: Map-based Turn Speed Control (M-TSC) for supported platforms</li>
+<li>openpilot Longitudinal Control available cars</li>
+<li>Custom Stock Longitudinal Control available cars</li>
+<li>UPDATED: Continued support for comma Pedal</li>
+<li>In response to the official deprecation of support for comma Pedal in the upstream, sunnypilot will continue maintaining software support for comma Pedal</li>
+<li>UPDATED: Driving Model Selector v4</li>
+<li>NEW❗: Driving Model additions<ul>
+<li>North Dakota (April 29, 2024) - NDv2</li>
+<li>WD40 (April 09, 2024) - WD40</li>
+<li>Duck Amigo (March 18, 2024) - DA</li>
+<li>Recertified Herbalist (March 01, 2024) - CHLR</li>
+</ul>
+</li>
+<li>Legacy Driving Models with Navigate on openpilot (NoO) support<ul>
+<li>Includes Duck Amigo and all preceding models</li>
+</ul>
+</li>
+<li>UPDATED: Bumping mapd by <a href="https://github.com/pfeiferj">@pfeiferj</a> to version <a href="https://github.com/pfeiferj/mapd/releases/tag/v1.9.0">v1.9.0</a> thanks to pfeiferj!</li>
+<li>UPDATED: Reset Mapbox Access Token -&gt; Reset Access Tokens for Map Services</li>
+<li>Reset self-service access tokens for Mapbox, Amap, and Google Maps</li>
+<li>UPDATED: Upstream native support for Gap Adjust Cruise</li>
+<li>UPDATED: Neural Network Lateral Control (NNLC)</li>
+<li>Due to upstream changes with platform simplifications, most platforms will match and fallback to combined platform model</li>
+<li>This will be updated when the new mapping of platforms are restructured (thanks @twilsonco 😉)</li>
+<li>UI Updates</li>
+<li>Display Metrics Below Chevron<ul>
+<li>NEW❗: Metrics is now being displayed below the chevron instead of above</li>
+<li>NEW❗: Display both Distance and Speed simultaneously</li>
+<li>NEW❗: View sunnylink connectivity status on the left sidebar!</li>
+</ul>
+</li>
+</ul>
+<h1 id="sunnypilot-0962-2024-05-29">sunnypilot - 0.9.6.2 (2024-05-29)<a class="headerlink" href="#sunnypilot-0962-2024-05-29" title="Permanent link">&para;</a></h1>
+<ul>
+<li>REMOVED: Screen Recorder</li>
+<li>Screen Recorder is removed due to unnecessary resource usage</li>
+<li>An improved version will be available in the near future. Stay tuned!</li>
+</ul>
+<h1 id="sunnypilot-0961-2024-02-27">sunnypilot - 0.9.6.1 (2024-02-27)<a class="headerlink" href="#sunnypilot-0961-2024-02-27" title="Permanent link">&para;</a></h1>
+<ul>
+<li>New driving model</li>
+<li>Vision model trained on more data</li>
+<li>Improved driving performance</li>
+<li>Directly outputs curvature for lateral control</li>
+<li>New driver monitoring model</li>
+<li>Trained on larger dataset</li>
+<li>AGNOS 9</li>
+<li>comma body streaming and controls over WebRTC</li>
+<li>Improved fuzzy fingerprinting for many makes and models</li>
+<li>Alpha longitudinal support for new Toyota models</li>
+<li>Chevrolet Equinox 2019-22 support thanks to JasonJShuler and nworb-cire!</li>
+<li>Dodge Durango 2020-21 support</li>
+<li>Hyundai Staria 2023 support thanks to sunnyhaibin!</li>
+<li>Kia Niro Plug-in Hybrid 2022 support thanks to sunnyhaibin!</li>
+<li>Lexus LC 2024 support thanks to nelsonjchen!</li>
+<li>Toyota RAV4 2023-24 support</li>
+<li>Toyota RAV4 Hybrid 2023-24 support</li>
+</ul>
+<hr />
+<ul>
+<li>UPDATED: Synced with commaai's openpilot</li>
+<li>master commit db57a21 (February 22, 2024)</li>
+<li>v0.9.6 release (February 27, 2024)</li>
+<li>UPDATED: Dynamic Experimental Control (DEC)</li>
+<li>Synced with dragonpilot-community/dragonpilot:beta3 commit f4ee52f</li>
+<li>NEW❗: Default Driving Model: Certified Herbalist v2 (February 13, 2024)</li>
+<li>UPDATED: Driving Model Selector v3</li>
+<li>NEW❗: Driving Model additions<ul>
+<li>Certified Herbalist v2 (February 13, 2024) - CHv2</li>
+<li>Certified Herbalist (February 5, 2024) - CH</li>
+<li>Los Angeles v2 (January 24, 2024) - LAv2</li>
+<li>Los Angeles (January 22, 2024) - LAv1</li>
+</ul>
+</li>
+<li>NEW❗: Model Caching thanks to DevTekVE!<ul>
+<li>Model caching allows the selection of previously downloaded Driving Model</li>
+<li>Users can now access cached versions of selected models, eliminating redundant downloads for previously fetched models</li>
+</ul>
+</li>
+<li>Legacy Driving Models support<ul>
+<li>New Delhi (December 21, 2023) - ND</li>
+<li>Blue Diamond v2 (December 11, 2023) - BDv2</li>
+<li>Blue Diamond (November 18, 2023) - BDv1</li>
+<li>Farmville (November 7, 2023) - FV</li>
+<li>Night Strike (October 3, 2023) - NS</li>
+</ul>
+</li>
+<li>Certain features are deprecated with newer Driving Models<ul>
+<li>Dynamic Lane Profile (DLP)</li>
+<li>Custom Offsets</li>
+</ul>
+</li>
+<li>UPDATED: Dynamic Lane Profile (DLP)</li>
+<li>Continued support for Legacy Driving Models (e.g., ND, BDv2, BDv1, FV, NS)</li>
+<li>Deprecated support for newer Driving Models (e.g., CHv2, CH, LAv2, LAv1)</li>
+<li>UPDATED: Custom Offsets</li>
+<li>Continued support for Legacy Driving Models (e.g., ND, BDv2, BDv1, FV, NS)</li>
+<li>Deprecated support for newer Driving Models (e.g., CHv2, CH, LAv2, LAv1)</li>
+<li>UPDATED: Hyundai/Kia/Genesis - ESCC Radar Interceptor</li>
+<li>Message parsing improvements with the latest firmware update: https://github.com/sunnypilot/panda/tree/test-escc-smdps</li>
+<li>UI Updates</li>
+<li>NEW❗: Visuals: Display Feature Status toggle<ul>
+<li>Display the statuses of certain features on the driving screen</li>
+</ul>
+</li>
+<li>NEW❗: Visuals: Enable Onroad Settings toggle<ul>
+<li>Display the Onroad Settings button on the driving screen to adjust feature options on the driving screen, without navigating into the settings menu</li>
+</ul>
+</li>
+<li>REMOVED: "Device ambient" temperature option on the sidebar</li>
+<li>FIXED: New comma 3X support</li>
+<li>FIXED: New comma eSIM support</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-0953-2023-12-24">sunnypilot - 0.9.5.3 (2023-12-24)<a class="headerlink" href="#sunnypilot-0953-2023-12-24" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Dynamic Experimental Control (DEC)</li>
+<li>Synced with dragonpilot-community/dragonpilot:lp-dp-beta2 commit 578d38b</li>
+<li>UPDATED: Driving Model Selector v2</li>
+<li>Driving models sort in descending order based on availability date</li>
+<li>Experimental/unmerged driving models are only available in "dev-c3" branch<ul>
+<li>To select and use experimental driving models, navigate to "Software" panel, select the "dev-c3" branch, and check for update</li>
+</ul>
+</li>
+<li>UPDATED: Vision-based Turn Speed Control (V-TSC) implementation</li>
+<li>Refactored implementation thanks to pfeiferj!</li>
+<li>More accurate and consistent velocity calculation to achieve smoother longitudinal control in curves</li>
+<li>NEW❗: Speed Limit Warning</li>
+<li>Display alert and/or chime to warn the driver when the cruising speed is faster than the speed limit plus the Warning Offset</li>
+<li>Customizable Warning Offset, independent of Speed Limit Control (SLC)'s Limit Offset</li>
+<li>UPDATED: Speed Limit Source Policy</li>
+<li>Selectable speed limit source for Speed Limit Control and Speed Limit Warning</li>
+<li>Applicable to: Speed Limit Control, Speed Limit Warning</li>
+<li>UPDATED: Speed Limit Control (SLC)</li>
+<li>Engage Mode: Removed "Warning Only" mode - this has been replaced by the new Speed Limit Warning sub-menu</li>
+<li>UPDATED: OpenStreetMap (OSM) implementation</li>
+<li>Refactored implementation thanks to pfeiferj!<ul>
+<li>Less resource impact</li>
+<li>Significantly smaller sizes with databases</li>
+<li>All regions are available to download</li>
+<li>Weekly map updates thanks to pfeiferj!</li>
+<li>Increased the font size of the road name</li>
+</ul>
+</li>
+<li>C3X-specific changes<ul>
+<li>Altitude (ALT.) display on Developer UI</li>
+<li>Current street name on top of driving screen when "OSM Debug UI" is enabled</li>
+</ul>
+</li>
+<li>UPDATED: Map-based Turn Speed Control (M-TSC) implementation</li>
+<li>Only available in "staging-c3" and "dev-c3" branches. If you are using "release-c3" branch, navigate to "Software" panel, select the desired target branch, and check for update</li>
+<li>Refactored implementation thanks to pfeiferj!</li>
+<li>Based on the new OpenStreetMap implementation</li>
+<li>Improved predicted curvature calculations from OpenStreetMap data</li>
+<li>UI updates</li>
+<li>RE-ENABLED: Navigation: Full screen support<ul>
+<li>Display the map view in full screen</li>
+<li>To switch back to driving view, tap on the border edge</li>
+</ul>
+</li>
+<li>Hyundai Bayon Non-SCC 2019 support thanks to polein78!</li>
+</ul>
+<h1 id="sunnypilot-0952-2023-12-07">sunnypilot - 0.9.5.2 (2023-12-07)<a class="headerlink" href="#sunnypilot-0952-2023-12-07" title="Permanent link">&para;</a></h1>
+<ul>
+<li>NEW❗: MADS: Allow Navigate on openpilot in Chill Mode</li>
+<li>Allow navigation to feed map view into the driving model while using Chill Mode</li>
+<li>Support all platforms, including platforms that do not support openpilot longitudinal control &amp; Experimental Mode</li>
+<li>NEW❗: Neural Network Lateral Controller</li>
+<li>Formerly known as "NNFF", this replaces the lateral "torque" controller with one using a neural network trained on each car's (actually, each separate EPS firmware) driving data for increased controls accuracy</li>
+<li>Contact @twilsonco in the sunnypilot Discord server with feedback, or to provide log data for your car if your car is currently unsupported</li>
+<li>NEW❗: Driving Model Selector</li>
+<li>Easily switch between driving models without reinstalling branches. Offering immediate access to the latest models upon release<ul>
+<li>An internet connection is required for downloading models. Each model switch currently involves downloading the model again. Future updates may allow for offline switching</li>
+</ul>
+</li>
+<li>Warning is displayed for metered connections to avoid unexpected data usage if on cellular data</li>
+<li>Change driving models via <strong>Settings -&gt; Software -&gt; Current Driving Model</strong>.</li>
+<li>NEW❗: Hyundai CAN longitudinal:</li>
+<li>NEW❗: Enable radar tracks for certain Santa Fe platforms<ul>
+<li>Internal Combustion Engine (ICE) 2021-23</li>
+<li>Hybrid 2022-23</li>
+<li>Plug-in Hybrid 2022-23</li>
+</ul>
+</li>
+<li>NEW❗: Lane Change: When manually braking with steering engaged, turning on the turn signal will default to Nudge mode</li>
+<li>Volkswagen MQB CC only platforms (radar or no radar) support thanks to jyoung8607!</li>
+</ul>
+<h1 id="sunnypilot-0951-2023-11-17">sunnypilot - 0.9.5.1 (2023-11-17)<a class="headerlink" href="#sunnypilot-0951-2023-11-17" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master commit e94c3c5</li>
+<li>NEW❗: Farmville driving model</li>
+<li>NEW❗: Onroad Settings Panel</li>
+<li>Onroad buttons (i.e., DLP, GAC) moved to its dedicated panel<ul>
+<li>Driving Personality</li>
+<li>Dynamic Lane Profile (DLP)</li>
+<li>Dynamic Experimental Control (DEC)</li>
+<li>Speed Limit Control (SLC)</li>
+</ul>
+</li>
+<li>NEW❗: Display main feature status on onroad view in real-time</li>
+<li>GAP - Driving Personality</li>
+<li>DLP - Dynamic Lane Profile</li>
+<li>DEC - Dynamic Experimental Control</li>
+<li>SLC - Speed Limit Control</li>
+<li>NEW❗: Dynamic Experimental Control (DEC) thanks to dragonpilot-community!</li>
+<li>Automatically determines and selects between openpilot ACC and openpilot End to End longitudinal based on conditions for a more natural drive</li>
+<li>Dynamic Experimental Control is only active while in Experimental Mode</li>
+<li>When Dynamic Experimental Control is ON, initially setting cruise speed will set to the vehicle's current speed</li>
+<li>NEW❗: Hyundai CAN longitudinal:</li>
+<li>NEW❗: Parse lead info for camera-based SCC platforms<ul>
+<li>Improve lead tracking when using openpilot longitudinal</li>
+</ul>
+</li>
+<li>NEW❗: Parse lead distance to display on car cluster<ul>
+<li>Introduced better lead distance calculation to display on the car's cluster, replacing the binary "lead visible" indication on the SCC cluster</li>
+<li>Lead distance is now categorized into different ranges for more detailed and comprehensive information to the driver similar to how stock ACC does it</li>
+</ul>
+</li>
+<li>NEW❗: Parse speed limit sign recognition from camera for certain supported platforms</li>
+<li>NEW❗: Subaru - Stop and Go auto-resume support thanks to martinl!</li>
+<li>Global (excluding Gen 2 and Hybrid) and Pre-Global support</li>
+<li>NEW❗: Toyota - Stop and Go hack</li>
+<li>Allow some Toyota/Lexus cars to auto resume during stop and go traffic</li>
+<li>Only applicable to certain models and model years</li>
+<li>NEW❗: Toyota: ZSS support thanks to dragonpilot-community and ErichMoraga!</li>
+<li>NEW❗: MSPA (Cereal structs refactor)</li>
+<li>Make sunnypilot Parsable Again - @sshane</li>
+<li>sunnypilot is now parsable with stock openpilot tools</li>
+<li>NEW❗: Display 3D buildings on map thanks to jakethesnake420!</li>
+<li>openpilot Longitudianl Control capable cars only</li>
+<li>UPDATED: Gap Adjust Cruise is now a part of Driving Personality<ul>
+<li>[DISTANCE/FOLLOW DISTANCE/GAP DISTANCE] physical button on the steering wheel to select Driving Personality on by default</li>
+<li>Status now viewable in onroad view or Onroad Settings Panel</li>
+<li>REMOVED: Gap Adjust Cruise toggle</li>
+</ul>
+</li>
+<li>UPDATED: Speed Limit Control (SLC)</li>
+<li>NEW❗: Speed Limit Engage Mode<ul>
+<li>Select the desired mode to set the cruising speed to the speed limit</li>
+<li>Warning Only: Warn the driver when the vehicle is driven faster than the speed limit</li>
+<li>Auto: Automatic speed adjustment on motorways based on speed limit data</li>
+<li>User Confirm: Inform the driver to change set speed of Adaptive Cruise Control to help the driver stay within the speed limit</li>
+<li>Supported platforms</li>
+<li>openpilot Longitudinal Control available cars (Excluding certain Toyota/Lexus, Ford, explained below)</li>
+<li>Custom Stock Longitudinal Control available cars</li>
+<li>Unsupported platforms</li>
+<li>Toyota/Lexus and Ford - most platforms do not allow us to control the PCM's set speed, requires testers to verify</li>
+</ul>
+</li>
+<li>NEW❗: Speed limit source selector<ul>
+<li>Select the desired precedence order of sources used to adapt cruise speed to road limits</li>
+</ul>
+</li>
+<li>UPDATED: Custom Stock Longitudinal Control</li>
+<li>RE-ENABLED: Hyundai/Kia/Genesis CAN-FD platforms</li>
+<li>UPDATED: Custom Offsets reimplementation</li>
+<li>Camera Offset only works in Laneful (Laneful Only or Laneful in Auto mode when using Dynamic Lane Profile)</li>
+<li>Path Offset can be applied to both Laneless and Laneful</li>
+<li>UPDATED: Refactored Torque Lateral Control custom tuning menu</li>
+<li>NEW❗: Less Restrict Settings for Self-Tune (Beta)</li>
+<li>NEW❗: Custom Tuning for setting offline and live values in real-time</li>
+<li>UPDATED: Auto-detect custom Mapbox token if a personal Mapbox token is provided</li>
+<li>REMOVED: "Enable Mapbox Navigation" toggle</li>
+<li>UI updates</li>
+<li>New Settings menu redesign and improved interactions</li>
+<li>FIXED: Retain hotspot/tethering state was not consistently saved</li>
+<li>FIXED: Map stuck in "Map Loading" if comma Prime is active</li>
+<li>FIXED: OpenStreetMap implementation on C3X devices</li>
+<li>M-TSC</li>
+<li>Altitude (ALT.) display on Developer UI</li>
+<li>Current street name on top of driving screen when "OSM Debug UI" is enabled</li>
+<li>Hyundai Kona Non-SCC 2019 support thanks to Quex!</li>
+<li>Kia Seltos Non-SCC 2023-24 support thanks to Moodkiller and jeroid_!</li>
+</ul>
+<h1 id="sunnypilot-0941-2023-08-11">sunnypilot - 0.9.4.1 (2023-08-11)<a class="headerlink" href="#sunnypilot-0941-2023-08-11" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's 0.9.4 release</li>
+<li>NEW❗: Moonrise driving model</li>
+<li>NEW❗: Ford upstream models support</li>
+<li>UPDATED: Dynamic Lane Profile selector in the "SP - Controls" menu</li>
+<li>REMOVED: Dynamic Lane Profile driving screen UI button</li>
+<li>FIXED: Disallow torque lateral control for angle control platforms (e.g. Ford, Nissan, Tesla)</li>
+<li>Torque lateral control cannot be used by angle control platforms, and would cause a "Controls Unresponsive" error if Torque lateral control is enforced in settings</li>
+<li>REMOVED: Speed Limit Style override</li>
+<li>Honda Accord 2016-17 support thanks to mlocoteta!</li>
+<li>Serial Steering hardware required. For more information, see https://github.com/mlocoteta/serialSteeringHardware</li>
+<li>mapd: utilize advisory speed limit in curves (#142) thanks to pfeiferj!</li>
+</ul>
+<h1 id="sunnypilot-0931-2023-07-09">sunnypilot - 0.9.3.1 (2023-07-09)<a class="headerlink" href="#sunnypilot-0931-2023-07-09" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's 0.9.3 release</li>
+<li>NEW❗: Display Temperature on Sidebar toggle</li>
+<li>Display Ambient temperature, memory temperature, CPU core with the highest temperature, GPU temperature, or max of Memory/CPU/GPU on the sidebar</li>
+<li>Replace "Display CPU Temperature on Sidebar" toggle</li>
+<li>NEW❗: Hot Coffee driving model</li>
+<li>NEW❗: HKG CAN: Smoother Stopping Performance (Beta) toggle</li>
+<li>Smoother stopping behind a stopped car or desired stopping event.</li>
+<li>This is only applicable to HKG CAN platforms using openpilot longitudinal control</li>
+<li>NEW❗: Toyota: TSS2 longitudinal: Custom Tuning</li>
+<li>Smoother longitudinal performance for Toyota/Lexus TSS2/LSS2 cars thanks to dragonpilot-community!</li>
+<li>NEW❗: Enable Screen Recorder toggle</li>
+<li>Enable this will display a button on the onroad screen to toggle on or off real-time screen recording with UI elements.</li>
+<li>IMPROVED: Dynamic Lane Profile: when using Laneline planner via Laneline Mode or Auto Mode, enforce Laneless planner while traveling below 10 MPH or 16 km/h</li>
+<li>REMOVED: Display CPU Temperature on Sidebar</li>
+</ul>
+<h1 id="sunnypilot-0923-2023-06-18">sunnypilot - 0.9.2.3 (2023-06-18)<a class="headerlink" href="#sunnypilot-0923-2023-06-18" title="Permanent link">&para;</a></h1>
+<ul>
+<li>NEW❗: Auto Lane Change: Delay with Blind Spot</li>
+<li>Toggle to enable a delay timer for seamless lane changes when blind spot monitoring (BSM) detects an obstructing vehicle, ensuring safe maneuvering</li>
+<li>NEW❗: Driving Screen Off: Wake with Non-Critical Events</li>
+<li>When Driving Screen Off Timer is not set to "Always On":<ul>
+<li>Enabled: Wake the brightness of the screen to display all events</li>
+<li>Disabled: Wake the brightness of the screen to display critical events</li>
+</ul>
+</li>
+<li>Currently, all non-nudge modes are default to continue lane change after 1 seconds of blind spot detection</li>
+<li>NEW❗: Fleet Manager PIN Requirement toggle</li>
+<li>User can now enable or disable PIN requirement on the comma device before accessing Fleet Manager</li>
+<li>NEW❗: Reset all sunnypilot settings toggle</li>
+<li>NEW❗: Turn signals display on screen when blinker is used</li>
+<li>Green: Blinker is on</li>
+<li>Red: Blinker is on, car detected in the adjacent blind spot or road edge detected</li>
+<li>IMPROVED: mapd: better exceptions handling when loading dependencies</li>
+<li>UPDATED: Green Traffic Light Chime no longer displays an orange border when executed</li>
+<li>FIXED: mapd: Road name flashing caused by desync with last GPS timestamp</li>
+<li>FIXED: Ram HD (2500/3500): Ignore paramsd sanity check</li>
+<li>Live parameters have trouble with self-tuning on this platform with upstream openpilot 0.9.2</li>
+<li>Hyundai: Longitudinal support for CAN-based Camera SCC cars thanks to Zack1010OP's Patreon sponsor!</li>
+</ul>
+<h1 id="sunnypilot-0922-2023-06-13">sunnypilot - 0.9.2.2 (2023-06-13)<a class="headerlink" href="#sunnypilot-0922-2023-06-13" title="Permanent link">&para;</a></h1>
+<ul>
+<li>NEW❗: Toyota: Allow M.A.D.S. toggling with LKAS Button (Beta)</li>
+<li>IMPROVED: Ram: cruise button handling</li>
+</ul>
+<h1 id="sunnypilot-0921-2023-06-10">sunnypilot - 0.9.2.1 (2023-06-10)<a class="headerlink" href="#sunnypilot-0921-2023-06-10" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's 0.9.2 release</li>
+<li>UPDATED: feature revamp with better stability</li>
+<li>UPDATED:</li>
+<li>M.A.D.S.<ul>
+<li>Path color becomes LIGHT ORANGE during Driver Steering Override</li>
+</ul>
+</li>
+<li>Gap Adjust Cruise (now known as Driving Personality in upstream openpilot 0.9.3):<ul>
+<li>Updated profiles and jerk changes</li>
+<li>Experimental Mode support</li>
+<li>Three settings: Stock, Aggressive, and Maniac</li>
+<li>Stock is recommended and the default</li>
+<li>In Aggressive/Maniac mode, lead follow distance is shorter and quicker gas/brake response</li>
+</ul>
+</li>
+<li>Dynamic Lane Profile<ul>
+<li>Display blue borders on both sides of the driving path when Laneline mode is being used in the planner</li>
+<li>Auto Mode optimization</li>
+<li>Permanent: Laneless during Auto Lane Change execution</li>
+</ul>
+</li>
+<li>Mapd<ul>
+<li>OpenStreetMap Database: new regions added</li>
+</ul>
+</li>
+<li>Developer UI (Dev UI)<ul>
+<li>REMOVED: 2-column design</li>
+<li>NEW❗: 1-column + 1-row design</li>
+</ul>
+</li>
+<li>Custom Stock Longitudinal Control<ul>
+<li>NEW❗: Chrysler/Jeep/Ram support</li>
+<li>NEW❗: Mazda support</li>
+<li>NEW❗: Volkswagen PQ support</li>
+<li>DISABLED: Hyundai/Kia/Genesis CAN-FD platforms</li>
+</ul>
+</li>
+<li>NEW❗: Switch between Chill (openpilot ACC) and Experimental (E2E longitudinal) with DISTANCE button on the steering wheel</li>
+<li>To switch between Chill and Experimental Mode: press and hold the DISTANCE button on the steering wheel for over 0.5 second</li>
+<li>All openpilot longitudinal capable cars support</li>
+<li>NEW❗: Nicki Minaj driving model</li>
+<li>NEW❗: Nissan and Mazda upstream models support</li>
+<li>NEW❗: Pre-Global Subaru upstream models support</li>
+<li>NEW❗: Display End-to-end Longitudinal Status (Beta)</li>
+<li>Display an icon that appears when the End-to-end model decides to start or stop</li>
+<li>NEW❗: Green Traffic Light Chime (Beta)</li>
+<li>A chime will play when the traffic light you are waiting for turns green, and you have no vehicle in front of you.</li>
+<li>NEW❗: Lead Vehicle Departure Alert</li>
+<li>Notify when the leading vehicle drives away</li>
+<li>NEW❗: Speedometer: Display True Speed</li>
+<li>Display the true vehicle current speed from wheel speed sensors.</li>
+<li>NEW❗: Speedometer: Hide from Onroad Screen</li>
+<li>NEW❗: Auto-Hide UI Buttons</li>
+<li>Hide UI buttons on driving screen after a 30-second timeout. Tap on the screen at anytime to reveal the UI buttons</li>
+<li>Applicable to Dynamic Lane Profile (DLP) and Gap Adjust Cruise (GAC)</li>
+<li>NEW❗: Display DM Camera in Reverse Gear</li>
+<li>Show Driver Monitoring camera while the car is in reverse gear</li>
+<li>NEW❗: Block Lane Change: Road Edge Detection (Beta)</li>
+<li>Block lane change when road edge is detected on the stalk actuated side</li>
+<li>NEW❗: Display CPU Temperature on Sidebar</li>
+<li>Display the CPU core with the highest temperature on the sidebar</li>
+<li>NEW❗: Display current driving model in Software settings</li>
+<li>NEW❗: HKG: smartMDPS automatic detection (installed with applicable firmware)</li>
+<li>FIXED: Unintended siren/alarm from the comma device if the vehicle is turned off too quickly in PARK gear</li>
+<li>FIXED: mapd: Exception handling for loading dependencies</li>
+<li>Fleet Manager via Browser support thanks to actuallylemoncurd, AlexandreSato, ntegan1, and royjr!</li>
+<li>Access your dashcam footage, screen recordings, and error logs when the car is turned off</li>
+<li>Connect to the device via Wi-Fi, mobile hotspot, or tethering on the comma device, then navigate to http://ipAddress:5050 to access.</li>
+<li>Honda Clarity 2018-22 support thanks to mcallbosco, vanillagorillaa and wirelessnet2!</li>
+<li>Ram: Steer to 0/7 MPH support thanks to vincentw56!</li>
+<li>Retain hotspot/tethering state across reboots thanks to rogerioaguas!</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2023-02-22">sunnypilot - Version Latest (2023-02-22)<a class="headerlink" href="#sunnypilot-version-latest-2023-02-22" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2023.02.19-04:52:00:GMT - 0.9.2</li>
+<li>Refactor sunnypilot features to be more stable</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-12-16">sunnypilot - Version Latest (2022-12-16)<a class="headerlink" href="#sunnypilot-version-latest-2022-12-16" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.12.16-06:31:00:GMT - 0.9.1</li>
+<li>NEW❗: GM:<ul>
+<li>NEW❗: Gap Adjust Cruise support - Chill, Normal, Aggressive</li>
+<li>NEW❗: Experimental Mode: Hold DISTANCE button on the steering wheel for 0.5 second to switch between Experimental Mode and Chill Mode</li>
+</ul>
+</li>
+<li>REMOVED❌: Toytoa: SnG Hack<ul>
+<li>This method is not recommended and may cause some cars to not behave as expected</li>
+<li>SDSU is strongly recommended to enable SnG for Toyota vehicles without SnG from factory</li>
+</ul>
+</li>
+<li>commaai: radard: add missing accel data for vision-only leads (commaai/openpilot#26619) - pending PR<ul>
+<li>VOACC performance is drastically improved when using Chill Mode</li>
+</ul>
+</li>
+<li>IMPROVED: M.A.D.S. events handling</li>
+<li>IMPROVED: UI: screen recorder button change</li>
+<li>IMPROVED: OpenStreetMap Offline Database optimization</li>
+<li>FIXED: Toyota: vehicles' LKAS button no longer has a delay with toggling M.A.D.S.</li>
+<li>FIXED: Toyota: brake pedal press at standstill causing Cruise Fault</li>
+<li>FIXED: Volkswagen MQB: reduce Camera Malfunction occurrences (requires testing)</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-12-10">sunnypilot - Version Latest (2022-12-10)<a class="headerlink" href="#sunnypilot-version-latest-2022-12-10" title="Permanent link">&para;</a></h1>
+<ul>
+<li>IMPROVED: NEW❗ Developer UI design<ul>
+<li>Second column metrics is now moved to the bottom of the screen<ul>
+<li>ACC. = Acceleration</li>
+<li>L.S. = Lead Speed</li>
+<li>E.T. = EPS Torque</li>
+<li>B.D. = Bearing Degree</li>
+<li>FRI. = Friction</li>
+<li>L.A. = Lateral Acceleration</li>
+<li>ALT. = Altitude</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-12-07">sunnypilot - Version Latest (2022-12-07)<a class="headerlink" href="#sunnypilot-version-latest-2022-12-07" title="Permanent link">&para;</a></h1>
+<ul>
+<li>NEW❗: Screen Recorder support thanks to neokii and Kumar!</li>
+<li>NEW❗: End-to-end longitudinal start/stop status icon<ul>
+<li>Only appears when Experimental Mode is enabled</li>
+</ul>
+</li>
+<li>NEW❗: End-to-end longitudinal car chime when starting<ul>
+<li>Hyundai/Kia/Genesis CAN platform, Honda/Acura Bosch/Nidec, Toyota/Lexus</li>
+<li>i.e. Traffic light turns green, stop sign ready to go, etc.</li>
+<li>Only appears when Experimental Mode is enabled AND longitudinal control is disengaged</li>
+</ul>
+</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-12-05">sunnypilot - Version Latest (2022-12-05)<a class="headerlink" href="#sunnypilot-version-latest-2022-12-05" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.12.04-22:46:00:GMT - 0.9.1</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-11-12">sunnypilot - Version Latest (2022-11-12)<a class="headerlink" href="#sunnypilot-version-latest-2022-11-12" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.11.12-10:02:00:GMT - 0.8.17</li>
+<li>FIXED: CAN Error for CAN HKG cars that do not have navigation from the factory</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-11-11">sunnypilot - Version Latest (2022-11-11)<a class="headerlink" href="#sunnypilot-version-latest-2022-11-11" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.11.11-21:22:00:GMT - 0.8.17</li>
+<li>commaai: AGNOS 6.2 (commaai/openpilot#26441)</li>
+<li>NEW❗: Speed Limit Control - HKG - add speed limit from car's navigation head unit<ul>
+<li>Compatible with certain models, trims, and model years</li>
+</ul>
+</li>
+<li>DISABLED: FCA: RAM HD - steer down to 0</li>
+<li>FIXED: UI: End-to-end longitudinal button on driving screen synchronization</li>
+<li>FIXED: Honda: Longitudinal status with set cruise speed now displays properly in the car's dashboard</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-11-08">sunnypilot - Version Latest (2022-11-08)<a class="headerlink" href="#sunnypilot-version-latest-2022-11-08" title="Permanent link">&para;</a></h1>
+<ul>
+<li>ADDED: New Zealand offline OpenStreetMap database</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-11-04">sunnypilot - Version Latest (2022-11-04)<a class="headerlink" href="#sunnypilot-version-latest-2022-11-04" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.11.05-01:44:00:GMT - 0.8.17</li>
+<li>RE-ENABLED: Dynamic Lane Profile - preserves lanelines<ul>
+<li>Can be found in "SP - Controls" menu</li>
+</ul>
+</li>
+<li>NEW❗: DLP: switch to laneless for current/future curves thanks to @twilsonco!<ul>
+<li>Can be found in "SP - Controls" menu</li>
+</ul>
+</li>
+<li>NEW❗: UI: Road Camera Selector<ul>
+<li>Enable this will display a button on the driving screen to select the driving camera</li>
+<li>Can be found in "SP - Visuals" menu</li>
+</ul>
+</li>
+<li>NEW❗: Controls: Camera &amp; Path Custom Offsets<ul>
+<li>Only applicable to laneline mode when using Dynamic Lane Profile</li>
+</ul>
+</li>
+<li>NEW❗: Buttons on driving screen are now sorted based on priority and availability</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-28">sunnypilot - Version Latest (2022-10-28)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-28" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.28-03:53:00:GMT - 0.8.17</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-26">sunnypilot - Version Latest (2022-10-26)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-26" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.26-06:20:00:GMT - 0.8.17</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-25">sunnypilot - Version Latest (2022-10-25)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-25" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.25-23:53:00:GMT - 0.8.17</li>
+<li>Pre-Global Subaru support thanks to @martinl!</li>
+<li>NEW❗: Speed Limit values turn red when current speed is higher than posted speed limit</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-23">sunnypilot - Version Latest (2022-10-23)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-23" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.22-23:15:00:GMT - 0.8.17</li>
+<li>IMPROVED: Custom Stock Longitudinal Control - HKG - only allow engagement on user button press</li>
+<li>IMPROVED: Custom Stock Longitudinal Control - Volkswagen MQB &amp; PQ - more consistent set speed change</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-21">sunnypilot - Version Latest (2022-10-21)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-21" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.21-17:33:00:GMT - 0.8.17</li>
+<li>IMPROVED: Custom Stock Longitudinal Control - Volkswagen MQB &amp; PQ - more predictable button send logic</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-20">sunnypilot - Version Latest (2022-10-20)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-20" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.20-20:25:00:GMT - 0.8.17</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-19">sunnypilot - Version Latest (2022-10-19)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-19" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.19-08:31:00:GMT - 0.8.17</li>
+<li>IMPROVED: Controls: Speed Limit Control - accelerator press only disengage if "Disengage on Accelerator Pedal" is enabled</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-18">sunnypilot - Version Latest (2022-10-18)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-18" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.18-04:44:00:GMT - 0.8.17</li>
+<li>RE-ENABLED: Volkswagen MQB &amp; PQ with Custom Stock Longitudinal Control</li>
+<li>NEW❗: Steering Rate Cost Live Tune<ul>
+<li>Enables live tune for Steering Rate Cost. Lower value allows steering wheel to move more freely at low speed</li>
+<li>Can be found in "SP - Controls" menu</li>
+</ul>
+</li>
+<li>FIXED: MADS: GM - include Regen Paddle logic thanks to @twilsonco!</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-17">sunnypilot - Version Latest (2022-10-17)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-17" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.17-23:54:00:GMT+1 - 0.8.17</li>
+<li>ENABLED: "Custom Stock Longitudinal Control" toggle for CAN-FD cars</li>
+<li>FIXED: HKG CAN-FD: Could not engage when openpilot longitudinal is enabled</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-13">sunnypilot - Version Latest (2022-10-13)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-13" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.13-19:43:00:GMT+1 - 0.8.17</li>
+<li>ADDED: Live Tmux toggle<ul>
+<li>Can be found in "SP - General" menu</li>
+</ul>
+</li>
+<li>IMPROVED: OpenStreetMap Database Update - only check for database update with explicit user decision</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-11">sunnypilot - Version Latest (2022-10-11)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-11" title="Permanent link">&para;</a></h1>
+<ul>
+<li>ADDED: Hyundai openpilot longitudinal improvements - huge thanks to @aragon7777!</li>
+<li>ADDED: Check for OpenStreetMap Database Update button</li>
+<li>UPDATED: commaai: Low speed lateral control improvements (commaai:openpilot#26022, bbcd448) - pending PR</li>
+<li>FIXED: MUTCD speed limit spacing adjusts dynamically when no subtext is shown (i.e., speed limit offset, distance to next speed limit)</li>
+<li>FIXED: MADS: Intermittent CAN Error when engaging for Toyota Prius TSS-P</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-09">sunnypilot - Version Latest (2022-10-09)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-09" title="Permanent link">&para;</a></h1>
+<ul>
+<li>ADDED: commaai: Low speed lateral control improvements (commaai:openpilot#26022, bca288bb) - pending PR</li>
+<li>FIXED: MADS: Intermittent CAN Error when engaging for Toyota Prius TSS-P</li>
+<li>IMPROVED: mapd: stop signs and other supported traffic_calming tags are now slowing/stopping as expected</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-08">sunnypilot - Version Latest (2022-10-08)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-08" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.08-12:07:00:GMT+1 - 0.8.17</li>
+<li>FIXED: MADS: Intermittent CAN Error when engaging for Toyota Prius TSS-P</li>
+<li>IMPROVED: mapd: Speed Humps are now set at 20 MPH or 32 km/h</li>
+<li>IMPROVED: OpenStreetMap Offline Database download experience</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-10-07">sunnypilot - Version Latest (2022-10-07)<a class="headerlink" href="#sunnypilot-version-latest-2022-10-07" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.10.07-08:16:00:GMT - 0.8.17</li>
+<li>NEW❗: OpenStreetMap database can now be downloaded locally for offline use<ul>
+<li>Now offering US South, US West, US Northeast, US Florida, Taiwan, and South Africa</li>
+<li>Databases updated - 2022.10.05-03:30:00:GMT</li>
+</ul>
+</li>
+<li>NEW❗: mapd: Stop Sign, Yield, Speed Bump, Speed Hump, Sharp Curve support - huge thanks to @move-fast and @dragonpilot-community!<ul>
+<li>Go to https://openstreetmap.org and start mapping out your area!</li>
+</ul>
+</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-30">sunnypilot - Version Latest (2022-09-30)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-30" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.30-22:43:00:GMT - 0.8.17</li>
+<li>RE-ADDED: Torque Lateral Controller Live Tune Menu</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-23">sunnypilot - Version Latest (2022-09-23)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-23" title="Permanent link">&para;</a></h1>
+<ul>
+<li>ADDED: Developer UI: latAccelFactorFiltered &amp; frictionCoefficientFiltered values displays in green if Torque is using live params</li>
+<li>Bug fixes and performance improvements</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-22">sunnypilot - Version Latest (2022-09-22)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-22" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.19-22:19:00:GMT - 0.8.17</li>
+<li>NEW❗: Toggle to explicitly enable Custom Stock Longitudinal Control<ul>
+<li>Applicable cars only: Honda, Hyundai/Kia/Genesis</li>
+<li>Settings -&gt; Toggles menu</li>
+</ul>
+</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-21">sunnypilot - Version Latest (2022-09-21)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-21" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.19-22:19:00:GMT - 0.8.17</li>
+<li>ADDED: Toggle to enable Live Torque (self/auto tune) with Torque lateral controller<ul>
+<li>To enable, first enable "Enforce Torque Lateral Controller" toggle</li>
+</ul>
+</li>
+<li>UPDATED: New metrics in Developer UI (when Live Torque is enabled)<ul>
+<li>REMOVED: latAccelFactorRaw &amp; frictionCoefficientRaw from torqued</li>
+<li>ADDED: latAccelFactorFiltered &amp; frictionCoefficientFiltered from torqued</li>
+</ul>
+</li>
+<li>REMOVED: Temporary remove Torque Lateral Controller Live Tune Menu</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-20">sunnypilot - Version Latest (2022-09-20)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-20" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.19-22:19:00:GMT - 0.8.17</li>
+<li>ADDED: Toggle to enable Live Torque (self/auto tune) with Torque lateral controller<ul>
+<li>To enable, first enable "Enforce Torque Lateral Controller" toggle</li>
+</ul>
+</li>
+<li>REMOVED: Temporary remove Torque Lateral Controller Live Tune Menu</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-18">sunnypilot - Version Latest (2022-09-18)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-18" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.17-11:23:00:GMT - 0.8.17</li>
+<li>ADDED: Kia Forte Non-SCC 2019 support for @askalice</li>
+<li>FIXED: Torque Lateral Control Live Tune now syncs with commaai:openpilot#25822</li>
+<li>FIXED: mapd dependencies no longer need to be re-downloaded after unknown reboots</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-17">sunnypilot - Version Latest (2022-09-17)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-17" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.17-11:23:00:GMT - 0.8.17</li>
+<li>NEW❗: Non SCC HKG support<ul>
+<li>Custom Stock Longitudinal Control</li>
+<li>❗No❗ openpilot longitudinal control</li>
+</ul>
+</li>
+<li>FIXED: Honda Bosch random low-value set speed changes</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-16">sunnypilot - Version Latest (2022-09-16)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-16" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.16-20:23:00:GMT - 0.8.17</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-15">sunnypilot - Version Latest (2022-09-15)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-15" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.16-02:00:00:GMT - 0.8.17</li>
+<li>FIXED: Block additional auto lane change actions if blinker stays on after the first lane change</li>
+<li>REVERTED: Some Toyota with LKAS button no longer requires double press to engage/disengage M.A.D.S.</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-14u">sunnypilot - Version Latest (2022-09-14)u<a class="headerlink" href="#sunnypilot-version-latest-2022-09-14u" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.11-02:47:00:GMT - 0.8.17</li>
+<li>NEW❗: GM models supported in Force Car Recognition (FCR)<ul>
+<li>Under "SP - Vehicles"</li>
+</ul>
+</li>
+<li>NEW❗: Prompt to select car in "SP - Vehicles" if car unrecognized on startup</li>
+<li>FIXED: Some Toyota with LKAS button no longer requires double press to engage/disengage M.A.D.S.</li>
+<li>UPDATED: ESCC: Use radar tracks from radar if available</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-13">sunnypilot - Version Latest (2022-09-13)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-13" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.11-02:47:00:GMT - 0.8.17</li>
+<li>NEW❗: New metric in Developer UI<ul>
+<li>Actual Lateral Acceleration (Roll Compensated)</li>
+</ul>
+</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-12">sunnypilot - Version Latest (2022-09-12)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-12" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.11-02:47:00:GMT - 0.8.17</li>
+<li>FIXED: Honda Nidec models not gaining speed when longitudinal engaged</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-11">sunnypilot - Version Latest (2022-09-11)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-11" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.11-02:47:00:GMT - 0.8.17</li>
+<li>NEW❗: Hyundai Enhanced SCC now forwards FCW and AEB signals and commands from radar to car</li>
+<li>RE-ENABLED: MADS Status Icon toggle</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-10">sunnypilot - Version Latest (2022-09-10)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-10" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.11-02:47:00:GMT - 0.8.17</li>
+<li>NEW❗: RAM improvement implementation thanks to realfast!</li>
+<li>DISABLED: Chrysler/Jeep/Ram with Custom Stock Longitudinal Control</li>
+<li>DISABLED: Volkswagen MQB &amp; PQ with Custom Stock Longitudinal Control</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-09">sunnypilot - Version Latest (2022-09-09)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-09" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.09-07:35:00:GMT - 0.8.17</li>
+<li>NEW❗: MADS now supporting General Motors (GM)</li>
+<li>ADDED: Custom Stock Longitudinal Control - Volkswagen<ul>
+<li>MQB &amp; PQ</li>
+</ul>
+</li>
+<li>ADDED: Reverse ACC Change<ul>
+<li>ACC +/-: Short=5, Long=1</li>
+</ul>
+</li>
+<li>ADDED: Custom Stock Longitudinal Control<ul>
+<li>Hyundai/Kia/Genesis</li>
+<li>Honda Bosch</li>
+</ul>
+</li>
+<li>ADDED: Hyundai: 2015-16 Genesis resume from standstill fix (commaai:openpilot#25579) - pending PR</li>
+<li>Vision Turn Speed Control re-enabled</li>
+<li>Disable Onroad Uploads toggle re-enabled</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-08">sunnypilot - Version Latest (2022-09-08)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-08" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.08-04:05:00:GMT - 0.8.17</li>
+<li>NEW❗: Block lane change initiation while brake is pressed</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-07">sunnypilot - Version Latest (2022-09-07)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-07" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.08-04:05:00:GMT - 0.8.17</li>
+<li>NEW❗: Display End-to-end longitudinal 🌮 on screen<ul>
+<li>NEW❗: Hold DISTANCE button on the steering wheel for 1 second to switch between E2E Long and ACC mode</li>
+<li>Enable toggle on the driving screen to switch between modes with End-to-end longitudinal</li>
+<li>Only applicable to cars with openpilot longitudinal control</li>
+</ul>
+</li>
+<li>NEW❗: Block lane change initiation while brake is pressed</li>
+<li>REMOVED: Dynamic Lane Profile - upstream laneless model is now on by default</li>
+<li>REMOVED: hyundai: consistent start from stop (commaai:openpilot#25672) - pending PR</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-06">sunnypilot - Version Latest (2022-09-06)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-06" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.06 - 0.8.17</li>
+<li>NEW❗: Display useful metrics above the chevron that tracks the lead car<ul>
+<li>Under "SP - Visuals" menu</li>
+<li>Only applicable to cars with openpilot longitudinal control</li>
+</ul>
+</li>
+<li>ADDED: hyundai: consistent start from stop (commaai:openpilot#25672) - pending PR</li>
+<li>FIXED: Vienna speed limit interface now scales properly with the outer box</li>
+<li>REMOVED: Hyundai long improvements (commaai:openpilot#25604) - closed PR</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-05">sunnypilot - Version Latest (2022-09-05)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-05" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.03 - 0.8.17</li>
+<li>NEW❗: Speed Limit Control (SLC) interface integrated with upstream</li>
+<li>NEW❗: Speed limit from active navigation is now prioritized for Speed Limit Control</li>
+<li>NEW❗: MUTCD (U.S.) or Vienna (E.U.) speed limit interfaces can now be selected under "SP - Controls"</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-04">sunnypilot - Version Latest (2022-09-04)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-04" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.03 - 0.8.17</li>
+<li>FIXED: Gap Adjust Cruise status now displays properly on screen</li>
+<li>FIXED: mapd - missing index in list caused mapd to crash</li>
+<li>REMOVED: Temporary removed Vision Turn Speed Control</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-09-03">sunnypilot - Version Latest (2022-09-03)<a class="headerlink" href="#sunnypilot-version-latest-2022-09-03" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.09.03 - 0.8.17</li>
+<li>ADDED: New border colors for different operation engagements</li>
+<li>ADDED: UI: Show barrier when car detected in blind spot<ul>
+<li>Only applicable to cars that have BSM detection with openpilot</li>
+</ul>
+</li>
+<li>FIXED: Cruise Cancel button no longer display prompt if cruise not engaged</li>
+<li>TWEAKED: Update changelogs on startup in Settings -&gt; Software -&gt; Version</li>
+<li>REMOVED: Upload Raw Logs and Full Resolution Videos toggles</li>
+</ul>
+<h1 id="sunnypilot-version-latest-2022-08-31">sunnypilot - Version Latest (2022-08-31)<a class="headerlink" href="#sunnypilot-version-latest-2022-08-31" title="Permanent link">&para;</a></h1>
+<ul>
+<li>UPDATED: Synced with commaai's master branch - 2022.08.31 - 0.8.17</li>
+<li>ADDED: New border colors for different operation engagements</li>
+<li>ADDED: UI: Show barrier when car detected in blind spot<ul>
+<li>Only applicable to cars that have BSM detection with openpilot</li>
+</ul>
+</li>
+<li>FIXED: Cruise Cancel button no longer display prompt if cruise not engaged</li>
+<li>REMOVED: Upload Raw Logs and Full Resolution Videos toggles</li>
+</ul>
+<h1 id="sunnypilot-version-0816-2022-07-16">sunnypilot - Version 0.8.16 (2022-07-16)<a class="headerlink" href="#sunnypilot-version-0816-2022-07-16" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Sync with commaai's master branches</li>
+<li>NEW❗: Add toggle to pause lateral actuation below 30 MPH / 50 KM/H</li>
+<li>IMPROVED: Better controls mismatch handling</li>
+<li>IMPROVED: Less frequent Low Memory alert</li>
+<li>IMPROVED: Only allow lateral control when in forward gears</li>
+<li>IMPROVED: Better alerts handling on gear changes</li>
+</ul>
+<h1 id="sunnypilot-version-0814-13-2022-06-29">sunnypilot - Version 0.8.14-1.3 (2022-06-29)<a class="headerlink" href="#sunnypilot-version-0814-13-2022-06-29" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Hyundai/Kia/Genesis<ul>
+<li>NEW❗: MADS: Add GAP/Distance button on the steering wheel to engage/disengage<ul>
+<li>To engage/disengage MADS: Hold the button for 0.5 second</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>NEW❗: Dynamic Lane Profile: Add toggle to enable "Laneless for Curves in Auto Lane"</li>
+<li>HOTFIX🛠: Improve Torque lateral control and reduce ping pong for some Toyota cars<ul>
+<li>Torque control: higher low speed gains and better steering angle deadzone logic</li>
+</ul>
+</li>
+<li>Developer UI: Remove Distance Traveled, replace with Memory Usage %<ul>
+<li>This may have a potential to fix the Low Memory alert that may appear</li>
+</ul>
+</li>
+</ul>
+<h1 id="sunnypilot-version-0814-1-2022-06-27">sunnypilot - Version 0.8.14-1 (2022-06-27)<a class="headerlink" href="#sunnypilot-version-0814-1-2022-06-27" title="Permanent link">&para;</a></h1>
+<ul>
+<li>HOTFIX🛠: Honda, Toyota, Volkswagen now initialized correctly with Torque Lateral Live Tune</li>
+</ul>
+<h1 id="sunnypilot-version-0814-1-2022-06-27_1">sunnypilot - Version 0.8.14-1 (2022-06-27)<a class="headerlink" href="#sunnypilot-version-0814-1-2022-06-27_1" title="Permanent link">&para;</a></h1>
+<ul>
+<li>NEW❗: Added toggle to enable updates for sunnypilot</li>
+<li>HOTFIX🛠: Volkswagen car list now displays properly in Force Car Recognition menu</li>
+<li>REVERTED: Honda - temporary removes CRUISE (MAIN) for MADS engagement<ul>
+<li>LKAS button continues to be used for MADS engagement/disengagement</li>
+</ul>
+</li>
+</ul>
+<h1 id="sunnypilot-version-0814-1-2022-06-26">sunnypilot - Version 0.8.14-1 (2022-06-26)<a class="headerlink" href="#sunnypilot-version-0814-1-2022-06-26" title="Permanent link">&para;</a></h1>
+<p>Visit https://bit.ly/sunnyreadme for more details
+* sunnypilot 0.8.14 release - based on openpilot 0.8.14 devel
+* "0.8.14-prod-c3" branch only supports comma three
+    * If you have a comma two, EON, or other devices than a comma three, visit sunnyhaibin's discord server for more details: https://discord.gg/wRW3meAgtx
+* Mono-branch support
+    * Honda/Acura
+    * Hyundai/Kia/Genesis
+    * Toyota/Lexus
+    * Volkswagen MQB
+* Modified Assistive Driving Safety (MADS) Mode
+    * NEW❗: CRUISE (MAIN) now engages MADS for all supported car makes
+    * NEW❗: Added toggle to disable disengaging Automatic Lane Centering (ALC) on the brake pedal
+* Dynamic Lane Profile (DLP)
+* NEW❗: Gap Adjust Cruise (GAC)
+    * openpilot longitudinal cars can now adjust between the lead car's following distance gap via 3 modes:
+        * Steering Wheel (SW) | User Interface (UI) | Steering Wheel + User Interface (SW+UI)
+* NEW❗: Custom Camera &amp; Path Offsets
+* NEW❗: Torque Lateral Control from openpilot 0.8.15 master (as of 2022-06-15)
+* NEW❗: Torque Lateral Control Live Tune Menu
+* NEW❗: Speed Limit Sign from openpilot 0.8.15 master (as of 2022-06-22)
+* NEW❗: Mapbox Speed Limit data will now be utilized in Speed Limit Control (SLC)
+    * Speed limit data will be utilized in the following availability:
+        * Mapbox (active navigation) -&gt; OpenStreetMap -&gt; Car Interface (Toyota's TSR)
+* Custom Stock Longitudinal Control
+    * NEW❗: Volkswagen MQB
+    * Honda
+    * Hyundai/Kia/Genesis
+* NEW❗: Mapbox navigation support for non-Prime users
+    * Visit sunnyhaibin's discord server for more details: https://discord.gg/wRW3meAgtx
+* Hyundai/Kia/Genesis
+    * NEW❗: Enhanced SCC (ESCC) Support
+        * Requires hardware modification. Visit sunnyhaibin's discord server for more details: https://discord.gg/wRW3meAgtx
+    * NEW❗: Smart MDPS (SMDPS) Support - Auto-detection
+        * Requires hardware modification and custom firmware for the SMDPS. Visit sunnyhaibin's discord server for more details: https://discord.gg/wRW3meAgtx
+* Toyota/Lexus
+    * NEW❗: Added toggle to enforce stock longitudinal control</p>
+<h1 id="sunnypilot-version-0812-4">sunnypilot - Version 0.8.12-4<a class="headerlink" href="#sunnypilot-version-0812-4" title="Permanent link">&para;</a></h1>
+<ul>
+<li>NEW❗: Custom Stock Longitudinal Control by setting the target speed via openpilot's "MAX" speed thanks to multikyd!<ul>
+<li>Speed Limit Control</li>
+<li>Vision-based Turn Control</li>
+<li>Map-based Turn Control</li>
+</ul>
+</li>
+<li>NEW❗: HDA status integration with Custom Stock Longitudinal Control on applicable HKG cars only</li>
+<li>NEW❗: Roll Compensation and SteerRatio fix from comma's 0.8.13</li>
+<li>NEW❗: Dev UI to display different metrics on screen<ul>
+<li>Click on the "MAX" box on the top left of the openpilot display to toggle different metrics display</li>
+<li>Lead car relative distance; Lead car relative speed; Actual steering degree; Desired steering degree; Engine RPM; Longitudinal acceleration; Lead car actual speed; EPS torque; Current altitude; Compass direction</li>
+</ul>
+</li>
+<li>NEW❗: Stand Still Timer to display time spent at a stop with M.A.D.S engaged (i.e., stop lights, stop signs, traffic congestions)</li>
+<li>NEW❗: Current car speed text turns red when the car is braking</li>
+<li>NEW❗: Export GPS tracks into GPX files and upload to OSM thanks to eFini!</li>
+<li>NEW❗: Enable ACC and M.A.D.S with a single press of the RES+/SET- button</li>
+<li>NEW❗: ACC +/-: Short=5, Long=1<ul>
+<li>Change the ACC +/- buttons behavior with cruise speed change in openpilot</li>
+<li>Disabled (Stock):  Short=1, Long=5</li>
+<li>Enabled:  Short=5, Long=1</li>
+</ul>
+</li>
+<li>NEW❗: Speed Limit Value Offset (not %)*<ul>
+<li>Set speed limit higher or lower than actual speed limit for a more personalized drive.</li>
+<li><em>To use this feature, turn off "Enable Speed Limit % Offset"</em></li>
+</ul>
+</li>
+<li>NEW❗: Dedicated icon to show the status of M.A.D.S.</li>
+<li>NEW❗: No Offroad Fix for non-official devices that cannot shut down after the car is turned off</li>
+<li>NEW❗: Stop N' Go Resume Alternative<ul>
+<li>Offer alternative behavior to auto resume when stopped behind a lead car using stock SCC/ACC. This feature removes the repeating prompt chime when stopped and/or allows some cars to use auto resume (i.e., Genesis)</li>
+</ul>
+</li>
+<li>IMPROVED: Show the lead car icon in the car's dashboard when a lead car is detected by openpilot's camera vision</li>
+<li>FIXED: MADS button unintentionally set MAX when using stock longitudinal control thanks to Spektor56!</li>
+</ul>
+<h1 id="sunnypilot-version-0812-3">sunnypilot - Version 0.8.12-3<a class="headerlink" href="#sunnypilot-version-0812-3" title="Permanent link">&para;</a></h1>
+<ul>
+<li>NEW❗: Bypass "System Malfunction" alert toggle<ul>
+<li>Prevent openpilot from returning the "System Malfunction" alert that hinders the ability use openpilot</li>
+</ul>
+</li>
+<li>FIXED: Hyundai/Kia/Genesis Brake Hold Active now outputs the correct events on screen with M.A.D.S. engaged</li>
+</ul>
+<h1 id="sunnypilot-version-0812-2">sunnypilot - Version 0.8.12-2<a class="headerlink" href="#sunnypilot-version-0812-2" title="Permanent link">&para;</a></h1>
+<ul>
+<li>NEW❗: Disable M.A.D.S. toggle to disable the beloved M.A.D.S. feature<ul>
+<li>Enable Stock openpilot engagement/disengagement</li>
+</ul>
+</li>
+<li>ADJUST: Initialize Driving Screen Off Brightness at 50%</li>
+</ul>
+<h1 id="sunnypilot-version-0812-1">sunnypilot - Version 0.8.12-1<a class="headerlink" href="#sunnypilot-version-0812-1" title="Permanent link">&para;</a></h1>
+<ul>
+<li>sunnypilot 0.8.12 release - based on openpilot 0.8.12 devel</li>
+<li>Dedicated Hyundai/Kia/Genesis branch support</li>
+<li>NEW❗: OpenStreetMap integration thanks to the Move Fast team!<ul>
+<li>NEW❗: Vision-based Turn Control</li>
+<li>NEW❗: Map-Data-based Turn Control</li>
+<li>NEW❗: Speed Limit Control w/ optional Speed Limit Offset</li>
+<li>NEW❗: OpenStreetMap integration debug UI</li>
+<li>Only available to openpilot longitudinal enabled cars</li>
+</ul>
+</li>
+<li>NEW❗: Hands on Wheel Monitoring according to EU r079r4e regulation</li>
+<li>NEW❗: Disable Onroad Uploads for data-limited Wi-Fi hotspots when using OpenStreetMap related features</li>
+<li>NEW❗: Fast Boot (Prebuilt)</li>
+<li>NEW❗: Auto Lane Change Timer</li>
+<li>NEW❗: Screen Brightness Control (Global)</li>
+<li>NEW❗: Driving Screen Off Timer</li>
+<li>NEW❗: Driving Screen Off Brightness (%)</li>
+<li>NEW❗: Max Time Offroad</li>
+<li>Improved user feedback with M.A.D.S. operations thanks to Spektor56!<ul>
+<li>Lane Path<ul>
+<li>Green🟢 (Laneful), Red🔴 (Laneless): M.A.D.S. engaged</li>
+<li>White⚪: M.A.D.S. suspended or disengaged</li>
+<li>Black⚫: M.A.D.S. engaged, steering is being manually override by user</li>
+</ul>
+</li>
+<li>Screen border now only illuminates Green when SCC/ACC is engaged</li>
+</ul>
+</li>
+</ul>
+<h1 id="sunnypilot-version-0810-1-unreleased">sunnypilot - Version 0.8.10-1 (Unreleased)<a class="headerlink" href="#sunnypilot-version-0810-1-unreleased" title="Permanent link">&para;</a></h1>
+<ul>
+<li>sunnypilot 0.8.10 release - based on openpilot 0.8.10 <code>devel</code></li>
+<li>Add Toyota cars to Force Car Recognition</li>
+</ul>
+<h1 id="sunnypilot-version-089-4">sunnypilot - Version 0.8.9-4<a class="headerlink" href="#sunnypilot-version-089-4" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Hyundai: Fix Ioniq Hybrid signals</li>
+</ul>
+<h1 id="sunnypilot-version-089-3">sunnypilot - Version 0.8.9-3<a class="headerlink" href="#sunnypilot-version-089-3" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Update home screen brand and version structure</li>
+</ul>
+<h1 id="sunnypilot-version-089-2">sunnypilot - Version 0.8.9-2<a class="headerlink" href="#sunnypilot-version-089-2" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Added additional Sonata Hybrid Firmware Versions</li>
+<li>Features<ul>
+<li>Modified Assistive Driving Safety (MADS) Mode</li>
+<li>Dynamic Lane Profile (DLP)</li>
+<li>Quiet Drive 🤫</li>
+<li>Force Car Recognition (FCR)</li>
+<li>PID Controller: add kd into the stock PID controller</li>
+</ul>
+</li>
+</ul>
+<h1 id="sunnypilot-version-089-1">sunnypilot - Version 0.8.9-1<a class="headerlink" href="#sunnypilot-version-089-1" title="Permanent link">&para;</a></h1>
+<ul>
+<li>First changelog!</li>
+<li>Features<ul>
+<li>Modified Assistive Driving Safety (MADS) Mode</li>
+<li>Dynamic Lane Profile (DLP)</li>
+<li>Quiet Drive 🤫</li>
+<li>Force Car Recognition (FCR)</li>
+<li>PID Controller: add kd into the stock PID controller</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "content.code.copy", "content.code.select", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

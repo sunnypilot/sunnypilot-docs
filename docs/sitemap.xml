@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.sunnypilot.ai/CHANGELOGS/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.sunnypilot.ai/SAFETY/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
@@ -76,22 +81,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.sunnypilot.ai/installation/read-before-installing/</loc>
-         <lastmod>2024-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.sunnypilot.ai/installation/ssh-method/</loc>
-         <lastmod>2024-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.sunnypilot.ai/installation/url-method/</loc>
-         <lastmod>2024-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.sunnypilot.ai/safety-information/prohibited-safety-modifications/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sunnypilot.ai/setup/read-before-installing/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sunnypilot.ai/setup/ssh-method/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sunnypilot.ai/setup/url-method/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sunnypilot.ai/setup/changelogs/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
