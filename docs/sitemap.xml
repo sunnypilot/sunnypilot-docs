@@ -76,17 +76,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.sunnypilot.ai/how-to/enable-mapbox-navigation/</loc>
-         <lastmod>2024-08-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.sunnypilot.ai/how-to/radar-tracks/</loc>
+         <loc>https://docs.sunnypilot.ai/how-to/enabling-mapbox-navigation/</loc>
          <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sunnypilot.ai/how-to/turn-the-speed-blue/</loc>
+         <lastmod>2024-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sunnypilot.ai/how-to/hyundai/enabling-radar-tracks/</loc>
          <lastmod>2024-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
